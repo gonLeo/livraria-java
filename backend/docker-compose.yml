@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres-db:
+    container_name: livrariaTotem
+    image: postgres:latest
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: totem
+      POSTGRES_PASSWORD: totem
+      POSTGRES_DB: livraria
